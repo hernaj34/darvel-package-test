@@ -1,11 +1,10 @@
 {
-    "full_code": "darvel.test.test",
     "document_type": "object",
     "code": "test",
     "data": {
         "code": "test",
-        "name": "test5"
+        "name": "test6"
     },
     "created_at": "2022-03-01T20:48:53.563434Z",
-    "modified_at": "2022-03-01T21:04:52.852695Z"
+    "modified_at": "2022-03-01T21:05:48.450178Z"
 }
