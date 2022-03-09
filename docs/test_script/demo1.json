@@ -1,6 +1,6 @@
 {
     "document_type": "test_script",
-    "code": "test",
+    "code": "demo1",
     "data": {
         "script": {
             "context_code": "darvel.test.context_demo_python",
@@ -26,13 +26,70 @@
                         "name": "Inicio"
                     },
                     {
-                        "id": "bd5a8d7e-6000-4d11-8d1e-249f4466f4f4",
+                        "id": "7de7e1b8-1022-4a58-a5fb-4625229a1deb",
                         "type": "condition",
                         "name": "Nueva condici\u00f3n",
                         "rule": {
                             "type": "group",
                             "combinator": "all",
                             "rules": [
+                                {
+                                    "type": "expression",
+                                    "expression": [
+                                        {
+                                            "member_type": "context",
+                                            "code": "context",
+                                            "name": "context",
+                                            "type": {
+                                                "type": "object",
+                                                "object_code": "darvel.test.context_demo"
+                                            }
+                                        },
+                                        {
+                                            "member_type": "property",
+                                            "type": {
+                                                "type": "integer"
+                                            },
+                                            "code": "age",
+                                            "name": "Edad",
+                                            "complexity_level": 1,
+                                            "error": true
+                                        },
+                                        {
+                                            "member_type": "method",
+                                            "description": "",
+                                            "is_active": true,
+                                            "parent_type": {
+                                                "type": "$anyPrimitive"
+                                            },
+                                            "type": {
+                                                "type": "boolean"
+                                            },
+                                            "param_members": [
+                                                {
+                                                    "type": {
+                                                        "type": "integer"
+                                                    },
+                                                    "required": false,
+                                                    "code": "value",
+                                                    "name": "Valor"
+                                                }
+                                            ],
+                                            "source_code_for_binary_operator": "",
+                                            "code": "any_eq",
+                                            "name": "=",
+                                            "complexity_level": 1,
+                                            "source_code": "self == params.value",
+                                            "render_operator": "=",
+                                            "render_template": "{{value}}",
+                                            "language": "python",
+                                            "params": {
+                                                "value": 12
+                                            },
+                                            "error": true
+                                        }
+                                    ]
+                                },
                                 {
                                     "type": "expression",
                                     "expression": [
@@ -84,7 +141,7 @@
                                             "render_template": "{{value}}",
                                             "language": "python",
                                             "params": {
-                                                "value": "Jordi"
+                                                "value": "pepe"
                                             },
                                             "error": true
                                         }
@@ -94,13 +151,13 @@
                         },
                         "nested_statements": [
                             {
-                                "id": "83b7c7b1-45d3-4175-8c46-91dec00ca093",
+                                "id": "78ba7241-7190-41a8-8df2-ffcec4b567af",
                                 "type": "block",
                                 "label": "S\u00ed",
                                 "code": "true",
                                 "nested_statements": [
                                     {
-                                        "id": "81442800-819e-4dbf-b6f0-37be9a54ef01",
+                                        "id": "eaa5cfb1-0aa4-46cd-ac67-65c8168ec795",
                                         "type": "expressionGroup",
                                         "name": "Nuevo grupo de expresiones",
                                         "expressions": [
@@ -153,7 +210,7 @@
                                                     "complexity_level": 1,
                                                     "language": "python",
                                                     "params": {
-                                                        "message": "Hola Jordi"
+                                                        "message": "Done"
                                                     }
                                                 }
                                             ]
@@ -162,7 +219,7 @@
                                 ]
                             },
                             {
-                                "id": "709b9e5d-7ae1-4a9a-af3c-9ba5014333c1",
+                                "id": "d7550527-f241-4f3c-b2e6-c56717de49cc",
                                 "type": "block",
                                 "label": "No",
                                 "code": "false",
@@ -178,9 +235,9 @@
                 ]
             }
         },
-        "code": "test",
-        "name": "test"
+        "code": "demo1",
+        "name": "demo1"
     },
-    "created_at": "2022-03-08T10:36:11.729075+01:00",
-    "modified_at": "2022-03-08T10:36:11.729097+01:00"
+    "created_at": "2022-03-08T11:12:53.766208+01:00",
+    "modified_at": "2022-03-08T11:12:53.766249+01:00"
 }
